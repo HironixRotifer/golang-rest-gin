@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+                <a class="in-nav" href="/">Home</a>
+                <a class="in-nav" href="/help">Help</a>
+            {{if .Header }}
+                <a class="in-nav" href="/dashboard">Dashbord</a>
+                <a class="in-nav" href="/logout">Logout</a>
+            {{else}}
+                <a class="in-nav" href="/reg">Sing up</a>
+                <a class="in-nav" href="/login">Sing in</a>
+            {{end}}         
+        </nav>
+    </header>
+    <main class="content">
+    

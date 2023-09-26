@@ -1,0 +1,40 @@
+{{ template "header.html" .}}
+<title>Login</title>    
+
+<form method="post">
+    <div class="form" style="display: flex; flex-direction: column; text-align: center; justify-content: center; align-items: center; padding-top: 20vh;">
+        <div class="form-control" style="padding-right: 10vh;">
+            <input type="value" name="login" required="">
+            <label style="padding-right: 10vh;">
+                <span style="transition-delay:0ms">U</span>
+                <span style="transition-delay:50ms">s</span>
+                <span style="transition-delay:100ms">e</span>
+                <span style="transition-delay:150ms">r</span>
+                <span style="transition-delay:200ms">n</span>
+                <span style="transition-delay:250ms">a</span>
+                <span style="transition-delay:300ms">m</span>
+                <span style="transition-delay:350ms">e</span>
+            </label>
+        </div>
+        <div class="form-control" style="padding-left: 7vh;">
+            <input type="value" name="password" required="">
+            <label style="padding-left: 7vh;">
+                <span style="transition-delay:0ms">P</span>
+                <span style="transition-delay:50ms">a</span>
+                <span style="transition-delay:100ms">s</span>
+                <span style="transition-delay:150ms">s</span>
+                <span style="transition-delay:200ms">w</span>
+                <span style="transition-delay:250ms">o</span>
+                <span style="transition-delay:300ms">r</span>
+                <span style="transition-delay:350ms">d</span>
+            </label>
+        </div> 
+        <div class="Error" style="color: #c1c1c1; padding-left: 10vh;">
+            {{.content}}
+        </div>
+        <button class="button" type="submit" style="padding-right: 13vh;">Sign in</button>
+        <!-- <button type="submit"> efefefefe</button> -->
+    </div>
+</form>
+
+{{ template "footer.html" .}}
